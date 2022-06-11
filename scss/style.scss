@@ -25,6 +25,41 @@ h1{
     &.full-width{
         padding: 0;
     }
+
+    &.main-content{
+        text-align: center;
+
+        h1, p, a{
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        a.btn{
+            display: inline-block;
+        }
+
+    }
+}
+
+.badges-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.badge{
+    flex: 0 0 20%;
+}
+
+.btn{
+    color: $white-primary;
+    text-decoration: none;
+    background-color: $black-primary;
+    padding: 15px 30px;
+    border-radius: 20px;
+
 }
 
 img{
