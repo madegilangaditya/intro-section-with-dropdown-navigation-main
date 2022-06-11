@@ -1,0 +1,32 @@
+$white-primary: hsl(0, 0%, 98%);
+$gray-primary: hsl(0, 0%, 41%);
+$black-primary: hsl(0, 0%, 8%);
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 1rem;
+    color: $gray-primary;
+    font-weight: 500;
+}
+
+h1{
+    color: $black-primary;
+}
+
+.row {
+    display:flex;
+    justify-content:space-between;
+    padding:15px;
+
+    &.full-width{
+        padding: 0;
+    }
+}
+
+img{
+    width:100%;
+}
