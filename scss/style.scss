@@ -2,6 +2,8 @@ $white-primary: hsl(0, 0%, 98%);
 $gray-primary: hsl(0, 0%, 41%);
 $black-primary: hsl(0, 0%, 8%);
 
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -11,10 +13,13 @@ body{
     font-size: 1rem;
     color: $gray-primary;
     font-weight: 500;
+    font-family: 'Epilogue', sans-serif;
+    line-height: 1.5;
 }
 
 h1{
     color: $black-primary;
+    font-size: 2rem;
 }
 
 .row {
@@ -38,6 +43,14 @@ h1{
             display: inline-block;
         }
 
+    }
+
+    &.main-content{
+        padding-top: 48px;
+    }
+
+    &.badges{
+        padding-bottom: 48px;;
     }
 }
 
