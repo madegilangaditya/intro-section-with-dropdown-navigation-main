@@ -54,6 +54,28 @@ h1{
     }
 }
 
+.mobile-menu-wrap{
+    position:fixed;
+    width: 60%;
+    height: 100%;
+    background: #fff;
+    top: 0;
+    right: 0;
+    padding: 22px 24px;
+
+    ul{
+        list-style: none;
+    }
+}
+
+.overlay{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: .7;
+}
+
 .badges-wrap{
     display: flex;
     justify-content: center;
