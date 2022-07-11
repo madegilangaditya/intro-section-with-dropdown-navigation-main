@@ -62,10 +62,65 @@ h1{
     top: 0;
     right: 0;
     padding: 22px 24px;
+    flex-direction: column;
+    justify-content: stretch;
+
+    .close-wrapper{
+        align-self: flex-end;
+    }
+    
+    img{
+        max-width: 25px;
+    }
 
     ul{
         list-style: none;
+
+        li {
+            position: relative;
+
+            .sub-menu{
+                padding-left: 20px;
+            }
+
+            &.has-child{
+                >a::before{
+                    content: '';
+                    position: absolute;
+                    background: url(../images/icon-arrow-down.svg);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    width: 20px;
+                    height: 20px;
+                    right: -25px;
+                }
+            }
+
+            &.sub-menu-item{
+
+                a{
+                    display: flex;
+                    gap: 10px;
+                    line-height: 1;
+                    align-items: center;
+                }
+               
+            }
+
+
+            a{
+                color: $gray-primary;
+                position: relative;
+                text-decoration: none;
+                padding-bottom: 20px;
+                display: inline-block;
+            }
+        }
     }
+}
+
+.menu-right{
+    text-align: center;
 }
 
 .overlay{
