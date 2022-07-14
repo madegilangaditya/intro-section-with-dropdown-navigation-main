@@ -92,6 +92,13 @@ h1{
 
             .sub-menu{
                 padding-left: 20px;
+                transition: all .5s ease-in-out;
+                overflow: hidden;
+                max-height: 0;
+
+                &.active{
+                    max-height: 1000px;
+                }
             }
 
             &.has-child{
@@ -138,6 +145,11 @@ h1{
         border:1px solid $gray-primary;
         display: block;
         padding: 14px;
+
+        &:hover{
+            border: 1px solid $black-primary;
+            color: $black-primary;
+        }
     }
 }
 
@@ -182,3 +194,5 @@ h1{
 img{
     width:100%;
 }
+
+@import 'responsive';

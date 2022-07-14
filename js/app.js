@@ -10,3 +10,8 @@ function menuClose(){
     document.querySelector('.overlay').classList.remove('active');
     document.querySelector('.mobile-menu-wrap').classList.remove('active');
 }
+
+function subMenuClick(e){
+    e.preventDefault();
+    e.target.nextElementSibling.classList.toggle('active');
+}

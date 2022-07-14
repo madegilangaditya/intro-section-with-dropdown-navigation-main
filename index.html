@@ -21,41 +21,43 @@
           <div class="col-6 mobile-menu-wrapper">
             <img src="./images/icon-menu.svg" alt="icon menu mobile" class="mobile-menu" onclick="menuClick()">
           </div>
-        </div>
-        <div class="row mobile-menu-wrap">
-          <div class="close-wrapper">
-            <a href="#" class="close-menu" onclick="menuClose()">
-              <img src="./images/icon-close-menu.svg" alt="close menu">
-            </a>
+          <div class="row mobile-menu-wrap">
+            <div class="close-wrapper">
+              <a href="#" class="close-menu" onclick="menuClose()">
+                <img src="./images/icon-close-menu.svg" alt="close menu">
+              </a>
+            </div>
+            <nav class="menu-wrapper">
+              <ul class="menu-left">
+                <li class="menu-item has-child">
+                  <a href="#" onclick="subMenuClick(event)">Features</a>
+                  <ul class="sub-menu">
+                    <li class="sub-menu-item"><a href="#"><span><img src="./images/icon-todo.svg" alt="submenu"></span> Todo List</a></li>
+                    <li class="sub-menu-item"><a href="#"><span><img src="./images/icon-calendar.svg" alt="submenu"></span> Calendar</a></li>
+                    <li class="sub-menu-item"><a href="#"><span><img src="./images/icon-reminders.svg" alt="submenu"></span> Reminders</a></li>
+                    <li class="sub-menu-item"><a href="#"><span><img src="./images/icon-planning.svg" alt="submenu"></span> Planning</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item has-child">
+                  <a href="#" onclick="subMenuClick(event)">Company</a>
+                  <ul class="sub-menu">
+                    <li class="sub-menu-item"><a href="#">History</a></li>
+                    <li class="sub-menu-item"><a href="#">Our Team</a></li>
+                    <li class="sub-menu-item"><a href="#">Blog</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item"><a href="#">Careers</a></li>
+                <li class="menu-item"><a href="#">About</a></li>
+                
+              </ul>
+              <ul class="menu-right">
+                <li class="menu-item account"><a href="#">Login</a></li>
+                <li class="menu-item account register"><a href="#">Register</a></li>
+              </ul>
+            </nav>
           </div>
-          <nav class="menu-wrapper">
-            <ul class="menu-left">
-              <li class="menu-item has-child">
-                <a href="#">Features</a>
-                <ul class="sub-menu">
-                  <li class="sub-menu-item"><a href="#"><span><img src="./images/icon-todo.svg" alt="submenu"></span> Todo List</a></li>
-                  <li class="sub-menu-item"><a href="#"><span><img src="./images/icon-calendar.svg" alt="submenu"></span> Calendar</a></li>
-                  <li class="sub-menu-item"><a href="#"><span><img src="./images/icon-reminders.svg" alt="submenu"></span> Reminders</a></li>
-                  <li class="sub-menu-item"><a href="#"><span><img src="./images/icon-planning.svg" alt="submenu"></span> Planning</a></li>
-                </ul>
-              </li>
-              <li class="menu-item has-child"><a href="#">Company</a>
-                <ul class="sub-menu">
-                  <li class="sub-menu-item"><a href="#">History</a></li>
-                  <li class="sub-menu-item"><a href="#">Our Team</a></li>
-                  <li class="sub-menu-item"><a href="#">Blog</a></li>
-                </ul>
-              </li>
-              <li class="menu-item"><a href="#">Careers</a></li>
-              <li class="menu-item"><a href="#">About</a></li>
-              
-            </ul>
-            <ul class="menu-right">
-              <li class="menu-item account"><a href="#">Login</a></li>
-              <li class="menu-item account register"><a href="#">Register</a></li>
-            </ul>
-          </nav>
         </div>
+        
       </header>
 
       <section>
