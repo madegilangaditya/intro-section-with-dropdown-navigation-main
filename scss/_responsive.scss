@@ -30,5 +30,65 @@
         padding: 0;
         transition: none;
         flex: 0 0 85%;
+
+        ul{
+            li{
+                position: static;
+
+                .sub-menu{
+                    background: #fff;
+                    max-height: initial;
+                    position: absolute;
+                    padding: 25px;
+                    box-shadow: 0px 0px 15px 1px #00000033;
+                    border-radius: 10px;
+                    opacity: 0;
+                    transition: none;
+                    visibility: hidden;
+                }
+
+                &.has-icons{
+
+                    .sub-menu{
+                        left: -60px;
+                    }
+                    
+                }
+
+                &.has-child{
+                    >a:hover,
+                    >a:focus-within{
+                        ~.sub-menu{
+                            opacity: 1;
+                            visibility: visible;
+                            transition: 0.3s all ease-in;
+                        }
+                    }
+
+                    .sub-menu{
+
+                        &:hover{
+                            opacity: 1;
+                            visibility: visible;
+                            transition: 0.3s all ease-in;
+                        }
+                        
+                    }
+
+
+                    >a{
+                        padding-right: 20px;
+
+                        &::before{
+                            right:0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .menu-left{
+        gap:60px;
     }
 }
