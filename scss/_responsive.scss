@@ -9,6 +9,10 @@
             gap: 60px;
         }
 
+        .container{
+            align-items: flex-end;
+        }
+
         nav{
             display: flex;
             justify-content: space-between;
@@ -31,6 +35,16 @@
         transition: none;
         flex: 0 0 85%;
 
+        .menu-wrapper{
+            &>ul{
+                &>li{
+                    &>a{
+                        padding-bottom: 0;
+                    }
+                }
+            }
+        }
+
         ul{
             li{
                 position: static;
@@ -45,6 +59,12 @@
                     opacity: 0;
                     transition: none;
                     visibility: hidden;
+
+                    li:last-child{
+                        a{
+                            padding-bottom: 0;
+                        }
+                    }
                 }
 
                 &.has-icons{
@@ -84,11 +104,33 @@
                         }
                     }
                 }
+
+               
+            }
+
+            
+        }
+        .menu-right{
+            align-items: center;
+            gap: 42px;
+    
+            .register{
+    
+                a{
+                    padding: 10px 22px;
+                }
             }
         }
+    }
+
+    .menu-wrapper{
+        align-items: center;
+        gap: 42px;
     }
 
     .menu-left{
         gap:60px;
     }
+
+    
 }

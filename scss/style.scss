@@ -132,6 +132,10 @@ h1{
                 text-decoration: none;
                 padding-bottom: 20px;
                 display: inline-block;
+
+                &:hover{
+                    color: $black-primary;
+                }
             }
         }
     }
