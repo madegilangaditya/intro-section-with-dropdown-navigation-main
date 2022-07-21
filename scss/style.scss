@@ -33,6 +33,8 @@ h1{
 
     &.main-content{
         text-align: center;
+        flex-direction: column;
+        padding-top: 48px;
 
         h1, p, a{
             margin-bottom: 20px;
@@ -45,12 +47,9 @@ h1{
 
     }
 
-    &.main-content{
-        padding-top: 48px;
-    }
-
     &.badges{
-        padding-bottom: 48px;;
+        padding-bottom: 48px;
+        justify-content: center;
     }
 }
 .mobile-menu{
