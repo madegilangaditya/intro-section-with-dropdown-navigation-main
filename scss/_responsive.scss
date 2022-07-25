@@ -135,22 +135,44 @@
     section{
         display: flex;
         flex-direction: row-reverse;
-        max-width: 1100px;
+        max-width: 1200px;
         margin: auto;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 30px;
     }
 
     .row{
         &.badges{
             justify-content: flex-start;
+            padding: 0;
         }
 
         &.main-content{
             text-align: left;
+            flex: 0 0 48%;
 
             h1{
-                font-size: 4.938rem;
+                font-size: 5.438rem;
                 line-height: 1;
+                margin-bottom: 60px;
             }
+
+            .col-half{
+                p{
+                    font-size: 1.25rem;
+                    margin-bottom: 50px;
+                    max-width: 500px;
+                }
+            }
+
+            .btn{
+                margin-bottom: 90px;
+            }
+        }
+
+        &.full-width{
+            flex: 0 0 45%;
         }
     }
 
@@ -161,6 +183,14 @@
 
     .col-half{
         flex: 0 0 50%;
+    }
+
+    .desktop-hide{
+        display: none;
+    }
+
+    .mobile-hide{
+        display: block;
     }
 
     

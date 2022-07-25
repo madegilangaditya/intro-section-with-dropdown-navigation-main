@@ -17,6 +17,10 @@ body{
     line-height: 1.5;
 }
 
+.desktop-hide{
+    display: none;
+}
+
 h1{
     color: $black-primary;
     font-size: 2rem;
@@ -191,7 +195,13 @@ h1{
     background-color: $black-primary;
     padding: 15px 30px;
     border-radius: 20px;
+    border: 1px solid $black-primary;
+    transition: all .3s ease-out;
 
+    &:hover{
+        background-color: $white-primary;
+        color: $black-primary;
+    }
 }
 
 img{
