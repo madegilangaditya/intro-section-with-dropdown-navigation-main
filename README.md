@@ -25,21 +25,20 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./design/desktop-preview.jpg)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/responsive-mobile-first-workflow-using-vanilla-js-0RH4YtHikq](https://www.frontendmentor.io/solutions/responsive-mobile-first-workflow-using-vanilla-js-0RH4YtHikq)
+- Live Site URL: [https://madegilangaditya.github.io/intro-section-with-dropdown-navigation-main/](https://madegilangaditya.github.io/intro-section-with-dropdown-navigation-main/)
 
 ## My process
 
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
 - Flexbox
-- CSS Grid
+- Vanilla JS
 - Mobile-first workflow
 
 
